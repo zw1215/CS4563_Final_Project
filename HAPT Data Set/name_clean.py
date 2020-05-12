@@ -1,1 +1,0 @@
-nameFile = open("features.txt")

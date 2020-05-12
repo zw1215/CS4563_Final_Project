@@ -1,0 +1,99 @@
+# Tuning hyper-parameters for precision
+
+Best parameters set found on development set:
+
+{'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+
+Grid scores on development set:
+
+0.536 (+/-0.034) for {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.402 (+/-0.011) for {'C': 1, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.848 (+/-0.078) for {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.579 (+/-0.090) for {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.855 (+/-0.085) for {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.848 (+/-0.077) for {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.852 (+/-0.061) for {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.848 (+/-0.091) for {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.842 (+/-0.061) for {'C': 1, 'kernel': 'linear'}
+0.840 (+/-0.060) for {'C': 10, 'kernel': 'linear'}
+0.840 (+/-0.059) for {'C': 100, 'kernel': 'linear'}
+0.840 (+/-0.059) for {'C': 1000, 'kernel': 'linear'}
+0.492 (+/-0.087) for {'gamma': 0.001, 'kernel': 'sigmoid'}
+0.300 (+/-0.073) for {'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.537 (+/-0.021) for {'gamma': 0.002, 'kernel': 'sigmoid'}
+0.402 (+/-0.012) for {'gamma': 0.0002, 'kernel': 'sigmoid'}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+              precision    recall  f1-score   support
+
+           1       0.95      0.99      0.97       496
+           2       0.98      0.96      0.97       471
+           3       0.99      0.97      0.98       420
+           4       0.96      0.90      0.93       508
+           5       0.91      0.97      0.94       556
+           6       1.00      1.00      1.00       545
+           7       1.00      0.83      0.90        23
+           8       0.91      1.00      0.95        10
+           9       0.68      0.78      0.72        32
+          10       0.70      0.76      0.73        25
+          11       0.76      0.69      0.72        49
+          12       0.73      0.59      0.65        27
+
+    accuracy                          	 0.95      3162
+   macro avg       0.88      0.87      0.87      3162
+weighted avg       0.95      0.95      0.95      3162
+
+
+# Tuning hyper-parameters for recall
+
+ 
+Best parameters set found on development set:
+
+{'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+
+Grid scores on development set:
+
+0.587 (+/-0.022) for {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.374 (+/-0.008) for {'C': 1, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.814 (+/-0.073) for {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.591 (+/-0.016) for {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.843 (+/-0.068) for {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.814 (+/-0.072) for {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.841 (+/-0.044) for {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.839 (+/-0.076) for {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.832 (+/-0.050) for {'C': 1, 'kernel': 'linear'}
+0.831 (+/-0.049) for {'C': 10, 'kernel': 'linear'}
+0.830 (+/-0.048) for {'C': 100, 'kernel': 'linear'}
+0.830 (+/-0.048) for {'C': 1000, 'kernel': 'linear'}
+0.499 (+/-0.031) for {'gamma': 0.001, 'kernel': 'sigmoid'}
+0.264 (+/-0.009) for {'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.571 (+/-0.036) for {'gamma': 0.002, 'kernel': 'sigmoid'}
+0.374 (+/-0.008) for {'gamma': 0.0002, 'kernel': 'sigmoid'}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+              precision    recall  f1-score   support
+
+           1       0.95      0.99      0.97       496
+           2       0.98      0.96      0.97       471
+           3       0.99      0.97      0.98       420
+           4       0.96      0.90      0.93       508
+           5       0.91      0.97      0.94       556
+           6       1.00      1.00      1.00       545
+           7       1.00      0.83      0.90        23
+           8       0.91      1.00      0.95        10
+           9       0.68      0.78      0.72        32
+          10       0.70      0.76      0.73        25
+          11       0.76      0.69      0.72        49
+          12       0.73      0.59      0.65        27
+
+    accuracy                           	0.95      3162
+   macro avg       0.88      0.87      0.87      3162
+weighted avg       0.95      0.95      0.95      3162
